@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guesser</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+  <div id="game-container" class="bg-white p-8 rounded shadow-md text-center">
+    <h1 class="text-3xl font-bold mb-6 text-blue-700">Can you guess the number?</h1>
+    <p class="text-lg mb-6">Keep it between <span class="text-green-500 font-bold" id="lower"></span> and <span
+        class="text-green-500 font-bold" id="higher"></span>.</p>
+    <input type="number" id="guess" class="border rounded px-4 py-2 mb-6" placeholder="Enter your guess">
+    <button id="guessBtn"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Guess</button>
+
+    <p id="chances" class="text-lg"></p>
+    <p id="result" class="text-lg font-bold mt-4"></p>
+  </div>
+
+  <script src="number-gusser.js"></script>
+</body>
+
+</html>
